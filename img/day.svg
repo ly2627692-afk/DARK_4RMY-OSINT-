@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>day</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Night_mode_Hiter" transform="translate(-1178.000000, -15.000000)" fill="#D5DCE1">
+            <g id="day-mode" transform="translate(1120.000000, 15.000000)">
+                <path d="M65.4744,17.6568 L64.3424,16.5248 L60.9488,19.9192 L62.08,21.0504 L65.4744,17.6568 Z M79.0504,4.08 L77.9192,2.9488 L74.5248,6.3424 L75.6568,7.4744 L79.0504,4.08 Z M64.3424,7.4744 L65.4744,6.3424 L62.08,2.9488 L60.9488,4.08 L64.3424,7.4744 Z M77.9192,21.0504 L79.0504,19.9192 L75.6568,16.5248 L74.5248,17.6568 L77.9192,21.0504 Z M58,12.8 L62.8,12.8 L62.8,11.2 L58,11.2 L58,12.8 Z M77.2,12.8 L82,12.8 L82,11.2 L77.2,11.2 L77.2,12.8 Z M69.2,4.8 L70.8,4.8 L70.8,0 L69.2,0 L69.2,4.8 Z M69.2,24 L70.8,24 L70.8,19.2 L69.2,19.2 L69.2,24 Z M75.6,12 C75.6,15.0928 73.0928,17.6 70,17.6 C66.9072,17.6 64.4,15.0928 64.4,12 C64.4,8.9064 66.9072,6.4 70,6.4 C73.0928,6.4 75.6,8.9064 75.6,12 L75.6,12 Z" id="day"></path>
+            </g>
+        </g>
+    </g>
+</svg>

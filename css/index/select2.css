@@ -1,0 +1,1853 @@
+.change-country-list {
+    width: 100%;
+}
+.radio + label {
+    cursor: pointer;
+}
+.radio:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.radio:not(checked) + label {
+    position: relative;
+    padding: 0 5px 0 17px;
+}
+
+.radio:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: var(--bg-main-2a);
+    box-sizing: content-box!important;
+}
+.radio:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #5ea2fb;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: all .2s;
+}
+.radio:checked + label:after {
+    opacity: 1;
+}
+.radio:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 100%!important;
+    -webkit-box-shadow: 0 2px 5px -1px rgba(50,50,93,.25),0 1px 3px -1px rgba(0,0,0,.3);
+    box-shadow: 0 2px 5px -1px rgba(50,50,93,.25),0 1px 3px -1px rgba(0,0,0,.3);
+
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select2-container .select2-selection--single .select2-selection__clear {
+    position: relative;
+}
+
+.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
+    padding-right: 8px;
+    padding-left: 20px;
+}
+
+.select2-container .select2-selection--multiple {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    min-height: 32px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select2-container .select2-search--inline {
+    float: left;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+    box-sizing: border-box;
+    border: none;
+    font-size: 100%;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.select2-dropdown {
+    background: var(--bg-main-2);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
+    --tw-ring-opacity: 0.05;
+}
+
+.select2-results {
+    display: block;
+}
+
+.select2-results__options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.select2-results__option {
+    padding: 7px 5px 6px 12px;
+    user-select: none;
+    -webkit-user-select: none;font-size: 13px;
+    overflow: hidden;
+    line-height: 17px;
+    white-space: nowrap;
+    color: var(--bg-select-color);
+    text-overflow: ellipsis;
+}
+
+.select2-results__option[aria-selected] {
+    cursor: pointer;
+}
+
+.select2-container--open .select2-dropdown {
+    left: 0;
+}
+
+.select2-container--open .select2-dropdown--above {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.select2-search--dropdown {
+    display: block;
+    padding: 4px;
+}
+
+.select2-search--dropdown .select2-search__field {
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+.select2-search--dropdown.select2-search--hide {
+    display: none;
+}
+
+.select2-close-mask {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    z-index: 99;
+    background-color: #fff;
+    filter: alpha(opacity=0);
+}
+.form-b {
+
+    margin-bottom: 10px;
+
+}
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.select2-container--default .select2-selection--single {
+    background: var(--bg-select);
+
+    border-radius: 4px;
+    height: 40px;
+    padding: 13px 0px 0 5px;
+
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--bg-select-color);
+    line-height: 18px;font-weight: 400;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #999;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    width: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {
+    float: left;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+    left: 1px;
+    right: auto;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: #eee;
+    cursor: default;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {
+    display: none;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
+    list-style: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 1px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #333;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {
+    float: right;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+    margin-left: 2px;
+    margin-right: auto;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: solid black 1px;
+    outline: 0;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--multiple {
+    background-color: #eee;
+    cursor: default;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection__choice__remove {
+    display: none;
+}
+
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    background: transparent;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    -webkit-appearance: textfield;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.select2-container--default .select2-results__option[role=group] {
+    padding: 0;
+}
+
+.select2-container--default .select2-results__option[aria-disabled=true] {
+    color: #999;
+}
+
+
+
+.select2-container--default .select2-results__option .select2-results__option {
+    padding-left: 1em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__group {
+    padding-left: 0;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -1em;
+    padding-left: 2em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -2em;
+    padding-left: 3em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -3em;
+    padding-left: 4em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -4em;
+    padding-left: 5em;
+}
+
+.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {
+    margin-left: -5em;
+    padding-left: 6em;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #5897fb;
+    color: white;
+}
+
+.select2-container--default .select2-results__group {
+    cursor: default;
+    display: block;
+    padding: 6px;
+}
+
+.select2-container--classic .select2-selection--single {
+    background-color: #f7f7f7;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    outline: 0;
+    background-image: -webkit-linear-gradient(top, white 50%, #eeeeee 100%);
+    background-image: -o-linear-gradient(top, white 50%, #eeeeee 100%);
+    background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
+}
+
+.select2-container--classic .select2-selection--single:focus {
+    border: 1px solid #5897fb;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__placeholder {
+    color: #999;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    background-color: #ddd;
+    border: none;
+    border-left: 1px solid #aaa;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    background-image: -webkit-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+    background-image: -o-linear-gradient(top, #eeeeee 50%, #cccccc 100%);
+    background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0);
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {
+    float: left;
+}
+
+.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+    border: none;
+    border-right: 1px solid #aaa;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    left: 1px;
+    right: auto;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single {
+    border: 1px solid #5897fb;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {
+    background: transparent;
+    border: none;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 50%);
+    background-image: -o-linear-gradient(top, white 0%, #eeeeee 50%);
+    background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-image: -webkit-linear-gradient(top, #eeeeee 50%, white 100%);
+    background-image: -o-linear-gradient(top, #eeeeee 50%, white 100%);
+    background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0);
+}
+
+.select2-container--classic .select2-selection--multiple {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: text;
+    outline: 0;
+}
+
+.select2-container--classic .select2-selection--multiple:focus {
+    border: 1px solid #5897fb;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__rendered {
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__clear {
+    display: none;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {
+    color: #888;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color: #555;
+}
+
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+    float: right;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {
+    margin-left: 2px;
+    margin-right: auto;
+}
+
+.select2-container--classic.select2-container--open .select2-selection--multiple {
+    border: 1px solid #5897fb;
+}
+
+.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.select2-container--classic .select2-search--dropdown .select2-search__field {
+    border: 1px solid #aaa;
+    outline: 0;
+}
+
+.select2-container--classic .select2-search--inline .select2-search__field {
+    outline: 0;
+    box-shadow: none;
+}
+
+.select2-container--classic .select2-dropdown {
+    background: var(--bg-select);
+    border: 1px solid transparent;
+}
+
+.select2-container--classic .select2-dropdown--above {
+    border-bottom: none;
+}
+
+.select2-container--classic .select2-dropdown--below {
+    border-top: none;
+}
+
+.select2-container--classic .select2-results > .select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.select2-container--classic .select2-results__option[role=group] {
+    padding: 0;
+}
+
+.select2-container--classic .select2-results__option[aria-disabled=true] {
+    color: grey;
+}
+
+.select2-container--classic .select2-results__option--highlighted[aria-selected] {
+    background-color: #3875d7;
+    color: white;
+}
+
+.select2-container--classic .select2-results__group {
+    cursor: default;
+    display: block;
+    padding: 6px;
+}
+
+.select2-container--classic.select2-container--open .select2-dropdown {
+    border-color: #5897fb;
+}
+
+
+.country-icon {
+    width: 14px;
+    background-image: url(../../images/flags.png);
+    height: 14px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 1px 0px #888;
+    background-repeat: no-repeat;
+    display: inline-block;vertical-align: top;margin-right: 5px;--tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.iti__flag_box
+.ci-icon-lang-Algeria {
+    background-position: -3921px 0px;
+}
+
+.ci-icon-lang-Russia {
+    background-position: -4295px 0px;
+}
+
+.iti__flag_box
+.ci-icon-lang-Ukraine {
+    background-position: -5175px 0px;
+}
+
+.iti__flag_box
+.ci-icon-lang-Belgium {
+    background-position: -440px 0px;
+}
+
+.ci-icon-lang-Switzerland {
+    background-position: -944px 0px;
+}
+
+.ci-icon-lang-Monaco {
+    background-position: -3139px 0px;
+}
+
+.ci-icon-lang-Nepal {
+    background-position: -3796px 0px;
+}
+
+.ci-icon-lang-VaticanCity {
+    background-position: -5329px 0px;
+}
+
+.ci-icon-lang-Andorra {
+
+    background-position: -22px 0px;
+}
+
+.ci-icon-lang-UnitedArabEmirates {
+
+    background-position: -44px 0px;
+}
+
+.ci-icon-lang-Avgan {
+
+    background-position: -66px 0px;
+}
+
+.ci-icon-lang-Antigua {
+
+    background-position: -88px 0px;
+}
+
+.ci-icon-lang-Anguilla {
+
+    background-position: -110px 0px;
+}
+
+.iti__flag_box
+.iti__al {
+
+    background-position: -132px 0px;
+}
+
+.ci-icon-lang-Armenia {
+
+    background-position: -154px 0px;
+}
+
+.ci-icon-lang-Angola {
+
+    background-position: -176px 0px;
+}
+
+.iti__flag_box
+.iti__aq {
+
+    background-position: -198px 0px;
+}
+
+.ci-icon-lang-Argentina {
+
+    background-position: -220px 0px;
+}
+
+.iti__flag_box
+.iti__as {
+
+    background-position: -242px 0px;
+}
+
+.ci-icon-lang-Austria {
+
+    background-position: -264px 0px;
+}
+
+.ci-icon-lang-Australia {
+    background-position: -286px 0px;
+}
+
+.ci-icon-lang-Aruba {
+
+    background-position: -308px 0px;
+}
+
+.iti__flag_box
+.iti__ax {
+
+    background-position: -330px 0px;
+}
+
+.ci-icon-lang-Azerbaijan {
+
+    background-position: -352px 0px;
+}
+
+.ci-icon-lang-Bosnia {
+
+    background-position: -374px 0px;
+}
+
+.ci-icon-lang-Barbados {
+
+    background-position: -396px 0px;
+}
+
+.ci-icon-lang-Bangladesh {
+
+    background-position: -418px 0px;
+}
+
+.iti__flag_box
+.iti__be {
+
+    background-position: -440px 0px;
+}
+
+.ci-icon-lang-Burkina {
+
+    background-position: -460px 0px;
+}
+
+.ci-icon-lang-Bulgaria {
+
+    background-position: -482px 0px;
+}
+
+.ci-icon-lang-Bahrain {
+
+    background-position: -504px 0px;
+}
+
+.ci-icon-lang-Burundi {
+
+    background-position: -526px 0px;
+}
+
+.ci-icon-lang-Benin {
+
+    background-position: -548px 0px;
+}
+
+.iti__flag_box
+.iti__bl {
+
+    background-position: -570px 0px;
+}
+
+.ci-icon-lang-Bermuda {
+
+    background-position: -592px 0px;
+}
+
+.ci-icon-lang-Brunei {
+
+    background-position: -614px 0px;
+}
+
+.ci-icon-lang-Bolivia {
+
+    background-position: -636px 0px;
+}
+
+.iti__flag_box
+.iti__bq {
+
+    background-position: -658px 0px;
+}
+
+.ci-icon-lang-Brazil {
+
+    background-position: -680px 0px;
+}
+
+.ci-icon-lang-Bahamas {
+
+    background-position: -702px 0px;
+}
+
+.ci-icon-lang-Bhutan {
+
+    background-position: -724px 0px;
+}
+
+.iti__flag_box
+.iti__bv {
+
+    background-position: -746px 0px;
+}
+
+.ci-icon-lang-Botswana {
+
+    background-position: -768px 0px;
+}
+
+.ci-icon-lang-Belarus {
+
+    background-position: -790px 0px;
+}
+
+.ci-icon-lang-Belize {
+
+    background-position: -812px 0px;
+}
+
+.ci-icon-lang-Canada {
+
+    background-position: -834px 0px;
+}
+
+.iti__flag_box
+.iti__cc {
+
+    background-position: -856px 0px;
+}
+
+.ci-icon-lang-Congo {
+
+    background-position: -878px 0px;
+}
+
+.ci-icon-lang-African {
+
+    background-position: -900px 0px;
+}
+
+.iti__flag_box
+.iti__cg {
+
+    background-position: -922px 0px;
+}
+
+.iti__flag_box
+.iti__ch {
+
+    background-position: -944px 0px;
+}
+
+.iti__flag_box
+.iti__ci {
+
+    background-position: -961px 0px;
+}
+
+.iti__flag_box
+.iti__ck {
+
+    background-position: -983px 0px;
+}
+
+.ci-icon-lang-Chile {
+
+    background-position: -1005px 0px;
+}
+
+.Cameroon, .Cameroon .iti__flag_box {
+
+    background-position: -1027px 0px;
+}
+
+.ci-icon-lang-China {
+
+    background-position: -1049px 0px;
+}
+
+.ci-icon-lang-Colombia {
+
+    background-position: -1071px 0px;
+}
+
+.iti__flag_box
+.iti__cp {
+
+    background-position: -1093px 0px;
+}
+
+.ci-icon-lang-Costa {
+
+    background-position: -1115px 0px;
+}
+
+.ci-icon-lang-Cuba {
+
+    background-position: -1137px 0px;
+}
+
+.ci-icon-lang-Cape {
+
+    background-position: -1159px 0px;
+}
+
+
+.ci-icon-lang-Cyprus {
+
+    background-position: -1225px 0px;
+}
+
+.ci-icon-lang-Czech {
+
+    background-position: -1247px 0px;
+}
+
+.ci-icon-lang-Germany {
+
+    background-position: -1269px 0px;
+}
+
+.ci-icon-lang-Djibouti {
+
+    background-position: -1313px 0px;
+}
+
+.ci-icon-lang-Denmark {
+
+    background-position: -1335px 0px;
+}
+
+.ci-icon-lang-Dominican1 {
+
+    background-position: -1357px 0px;
+}
+
+
+.ci-icon-lang-Ecuador {
+
+    background-position: -1445px 0px;
+}
+
+.ci-icon-lang-Estonia {
+
+    background-position: -1467px 0px;
+}
+
+.ci-icon-lang-Egypt {
+
+    background-position: -1489px 0px;
+}
+
+.ci-icon-lang-Eritrea {
+
+    background-position: -1533px 0px;
+}
+
+.ci-icon-lang-España {
+
+    background-position: -1555px 0px;
+}
+
+.ci-icon-lang-Ethiopia {
+
+    background-position: -1577px 0px;
+}
+
+.ci-icon-lang-Finlan {
+    background-position: -1621px 0px;
+}
+
+.ci-icon-lang-Fiji {
+
+    background-position: -1643px 0px;
+}
+
+.ci-icon-lang-Falkland {
+
+    background-position: -1665px 0px;
+}
+
+.ci-icon-lang-Micronesia {
+
+    background-position: -1687px 0px;
+}
+
+.ci-icon-lang-Faroe {
+
+    background-position: -1709px 0px;
+}
+
+.ci-icon-lang-France {
+
+    background-position: -1731px 0px;
+}
+
+.ci-icon-lang-Gabon {
+
+    background-position: -1753px 0px;
+}
+
+.ci-icon-lang-UK {
+
+    background-position: -1775px 0px;
+}
+
+.ci-icon-lang-Grenada {
+
+    background-position: -1797px 0px;
+}
+
+.ci-icon-lang-Georgia {
+
+    background-position: -1819px 0px;
+}
+
+.ci-icon-lang-Guiana {
+
+    background-position: -1841px 0px;
+}
+
+.ci-icon-lang-Ghana {
+
+    background-position: -1885px 0px;
+}
+
+.ci-icon-lang-Gibraltar {
+
+    background-position: -1907px 0px;
+}
+
+.ci-icon-lang-Greenland {
+
+    background-position: -1929px 0px;
+}
+
+.ci-icon-lang-Gambia {
+
+    background-position: -1951px 0px;
+}
+
+.ci-icon-lang-Guinea {
+
+    background-position: -1973px 0px;
+}
+
+.ci-icon-lang-Guadeloupe {
+
+    background-position: -1995px 0px;
+}
+
+.ci-icon-lang-Equatorial {
+
+    background-position: -2017px 0px;
+}
+
+.ci-icon-lang-Greece {
+
+    background-position: -2039px 0px;
+}
+
+.ci-icon-lang-Guatemala {
+
+    background-position: -2083px 0px;
+}
+
+.ci-icon-lang-Guam {
+
+    background-position: -2105px 0px;
+}
+
+.ci-icon-lang-Bissau {
+
+    background-position: -2127px 0px;
+}
+
+.ci-icon-lang-Guyana {
+
+    background-position: -2149px 0px;
+}
+
+.ci-icon-lang-HongKong {
+
+    background-position: -2171px 0px;
+}
+
+.ci-icon-lang-Honduras {
+
+    background-position: -2215px 0px;
+}
+
+.ci-icon-lang-Croatia {
+
+    background-position: -2237px 0px;
+}
+
+.ci-icon-lang-Haiti {
+
+    background-position: -2259px 0px;
+}
+
+.ci-icon-lang-Hungary {
+
+    background-position: -2281px 0px;
+}
+
+.ci-icon-lang-Indonesia {
+
+    background-position: -2325px 0px;
+}
+
+.ci-icon-lang-Ireland {
+
+    background-position: -2347px 0px;
+}
+
+.ci-icon-lang-Israel {
+
+    background-position: -2369px 0px;
+}
+
+.ci-icon-lang-India {
+
+    background-position: -2413px 0px;
+}
+
+.ci-icon-lang-Iraq {
+
+    background-position: -2457px 0px;
+}
+
+.ci-icon-lang-Iran {
+
+    background-position: -2479px 0px;
+}
+
+.ci-icon-lang-Iceland {
+
+    background-position: -2501px 0px;
+}
+
+.ci-icon-lang-Italy {
+
+    background-position: -2523px 0px;
+}
+
+.ci-icon-lang-Jamaica {
+
+    background-position: -2567px 0px;
+}
+
+.ci-icon-lang-Jordan {
+
+    background-position: -2589px 0px;
+}
+
+.ci-icon-lang-Japan {
+
+    background-position: -2611px 0px;
+}
+
+.ci-icon-lang-Kenya {
+
+    background-position: -2633px 0px;
+}
+
+.ci-icon-lang-Kyrgyzstan {
+
+    background-position: -2655px 0px;
+}
+
+.ci-icon-lang-Cambodia {
+
+    background-position: -2677px 0px;
+}
+
+.ci-icon-lang-Kiribati {
+
+    background-position: -2699px 0px;
+}
+
+.ci-icon-lang-StKitts {
+
+    background-position: -2743px 0px;
+}
+
+.ci-icon-lang-Korea1 {
+
+    background-position: -2765px 0px;
+}
+
+.ci-icon-lang-Korea2 {
+
+    background-position: -2787px 0px;
+}
+
+.ci-icon-lang-Kuwait {
+
+    background-position: -2809px 0px;
+}
+
+.ci-icon-lang-Cayman {
+
+    background-position: -2831px 0px;
+}
+
+.ci-icon-lang-Kazakhstan {
+
+    background-position: -2853px 0px;
+}
+
+.ci-icon-lang-Laos {
+
+    background-position: -2875px 0px;
+}
+
+.ci-icon-lang-Lebanon {
+
+    background-position: -2897px 0px;
+}
+
+.ci-icon-lang-StLucia {
+
+    background-position: -2919px 0px;
+}
+
+.ci-icon-lang-Liechtenstein {
+
+    background-position: -2941px 0px;
+}
+
+.ci-icon-lang-SriLanka {
+
+    background-position: -2963px 0px;
+}
+
+.ci-icon-lang-Liberia {
+
+    background-position: -2985px 0px;
+}
+
+.ci-icon-lang-Lesotho {
+
+    background-position: -3007px 0px;
+}
+
+.ci-icon-lang-Lithuania {
+
+    background-position: -3029px 0px;
+}
+
+.ci-icon-lang-Luxembourg {
+
+    background-position: -3051px 0px;
+}
+
+.ci-icon-lang-Latvia {
+
+    background-position: -3073px 0px;
+}
+
+.ci-icon-lang-Libya {
+
+    background-position: -3095px 0px;
+}
+
+.ci-icon-lang-Morocco {
+
+    background-position: -3117px 0px;
+}
+
+.ci-icon-lang-Moldova {
+
+    background-position: -3160px 0px;
+}
+
+.ci-icon-lang-Madagascar {
+
+    background-position: -3226px 0px;
+}
+
+.ci-icon-lang-Marshall {
+
+    background-position: -3248px 0px;
+}
+
+.ci-icon-lang-Macedonia {
+
+    background-position: -3270px 0px;
+}
+
+.ci-icon-lang-Mali {
+
+    background-position: -3292px 0px;
+}
+
+.ci-icon-lang-Myanmar {
+
+    background-position: -3314px 0px;
+}
+
+.ci-icon-lang-Mongolia {
+
+    background-position: -3336px 0px;
+}
+
+.ci-icon-lang-Macao {
+
+    background-position: -3358px 0px;
+}
+
+.ci-icon-lang-Martinique {
+
+    background-position: -3402px 0px;
+}
+
+.ci-icon-lang-Mauritania {
+
+    background-position: -3424px 0px;
+}
+
+.ci-icon-lang-Montserrat {
+
+    background-position: -3446px 0px;
+}
+
+.ci-icon-lang-Malta {
+
+    background-position: -3468px 0px;
+}
+
+.ci-icon-lang-Maldives {
+
+    background-position: -3512px 0px;
+}
+
+.ci-icon-lang-Malawi {
+
+    background-position: -3534px 0px;
+}
+
+.ci-icon-lang-Mexico {
+
+    background-position: -3556px 0px;
+}
+
+.ci-icon-lang-Malaysia {
+
+    background-position: -3578px 0px;
+}
+
+.ci-icon-lang-Mozambique {
+
+    background-position: -3600px 0px;
+}
+
+.ci-icon-lang-Namibia {
+
+    background-position: -3622px 0px;
+}
+
+.ci-icon-lang-Caledonia {
+
+    background-position: -3644px 0px;
+}
+
+.ci-icon-lang-Niger {
+
+    background-position: -3666px 0px;
+}
+
+.ci-icon-lang-Norfolk {
+
+    background-position: -3686px 0px;
+}
+
+.ci-icon-lang-Nigeria {
+
+    background-position: -3708px 0px;
+}
+
+.ci-icon-lang-Nicaragua {
+
+    background-position: -3730px 0px;
+}
+
+.ci-icon-lang-Netherlands {
+
+    background-position: -3752px 0px;
+}
+
+.ci-icon-lang-Norway {
+
+    background-position: -3774px 0px;
+}
+
+.ci-icon-lang-Nepal {
+
+    background-position: -3796px 0px;
+}
+
+.ci-icon-lang-Nauru {
+
+    background-position: -3811px 0px;
+}
+
+.ci-icon-lang-Niue {
+
+    background-position: -3833px 0px;
+}
+
+.ci-icon-lang-Zealand {
+
+    background-position: -3855px 0px;
+}
+
+.ci-icon-lang-Oman {
+
+    background-position: -3877px 0px;
+}
+
+.ci-icon-lang-Panama {
+
+    background-position: -3899px 0px;
+}
+
+.ci-icon-lang-Peru {
+
+    background-position: -3921px 0px;
+}
+
+.ci-icon-lang-Polynesia {
+
+    background-position: -3943px 0px;
+}
+
+.ci-icon-lang-NewGuinea {
+
+    background-position: -3965px 0px;
+}
+
+.ci-icon-lang-Philippines {
+
+    background-position: -3987px 0px;
+}
+
+.ci-icon-lang-Pakistan {
+    background-position: -4009px 0px;
+}
+
+.ci-icon-lang-Poland {
+
+    background-position: -4031px 0px;
+}
+
+.ci-icon-lang-Puerto {
+
+    background-position: -4097px 0px;
+}
+
+.ci-icon-lang-Portugal {
+
+    background-position: -4141px 0px;
+}
+
+.ci-icon-lang-Palau {
+
+    background-position: -4163px 0px;
+}
+
+.ci-icon-lang-Paraguay {
+
+    background-position: -4185px 0px;
+}
+
+.ci-icon-lang-Qatar {
+
+    background-position: -4207px 0px;
+}
+
+.ci-icon-lang-Romania {
+
+    background-position: -4251px 0px;
+}
+
+.ci-icon-lang-Serbia {
+
+    background-position: -4273px 0px;
+}
+
+.ci-icon-lang-Rwanda {
+
+    background-position: -4317px 0px;
+}
+
+.ci-icon-lang-SaudiArabia {
+
+    background-position: -4339px 0px;
+}
+
+.ci-icon-lang-SolomonIslands {
+
+    background-position: -4361px 0px;
+}
+
+.ci-icon-lang-Seychelles {
+
+    background-position: -4383px 0px;
+}
+
+.ci-icon-lang-Sweden {
+
+    background-position: -4427px 0px;
+}
+
+.ci-icon-lang-Singapore {
+
+    background-position: -4449px 0px;
+}
+
+.ci-icon-lang-Slovenia {
+
+    background-position: -4493px 0px;
+}
+
+.ci-icon-lang-Slovak {
+
+    background-position: -4537px 0px;
+}
+
+.ci-icon-lang-SierraLeone {
+
+    background-position: -4559px 0px;
+}
+
+.ci-icon-lang-SanMarino {
+
+    background-position: -4581px 0px;
+}
+
+.ci-icon-lang-Senegal {
+
+    background-position: -4603px 0px;
+}
+
+.ci-icon-lang-Somalia {
+
+    background-position: -4625px 0px;
+}
+
+.ci-icon-lang-Suriname {
+
+    background-position: -4647px 0px;
+}
+
+.ci-icon-lang-Sudan {
+
+    background-position: -4669px 0px;
+}
+
+.ci-icon-lang-Salvador {
+
+    background-position: -4713px 0px;
+}
+
+.ci-icon-lang-Syria {
+
+    background-position: -4757px 0px;
+}
+
+.ci-icon-lang-Swaziland {
+
+    background-position: -4779px 0px;
+}
+
+.ci-icon-lang-Togo {
+
+    background-position: -4889px 0px;
+}
+
+.ci-icon-lang-Thailand {
+
+    background-position: -4911px 0px;
+}
+
+.ci-icon-lang-Tajikistan {
+
+    background-position: -4933px 0px;
+}
+
+.ci-icon-lang-Turkmenistan {
+
+    background-position: -4999px 0px;
+}
+
+.ci-icon-lang-Tunisia {
+
+    background-position: -5021px 0px;
+}
+
+.ci-icon-lang-Tonga {
+
+    background-position: -5043px 0px;
+}
+
+.ci-icon-lang-Turkey {
+
+    background-position: -5065px 0px;
+}
+
+.ci-icon-lang-Trinidad {
+
+    background-position: -5087px 0px;
+}
+
+.ci-icon-lang-Tuvalu {
+
+    background-position: -5109px 0px;
+}
+
+.ci-icon-lang-Taiwan {
+
+    background-position: -5131px 0px;
+}
+
+.ci-icon-lang-Ukraine {
+
+    background-position: -5175px 0px;
+}
+
+.ci-icon-lang-Uganda {
+
+    background-position: -5197px 0px;
+}
+
+.ci-icon-lang-USA {
+
+    background-position: -5263px 0px;
+}
+
+.ci-icon-lang-Uruguay {
+
+    background-position: -5285px 0px;
+}
+
+.ci-icon-lang-Uzbekistan {
+
+    background-position: -5307px 0px;
+}
+
+.ci-icon-lang-Venezuela {
+
+    background-position: -5368px 0px;
+}
+
+.ci-icon-lang-Vietnam {
+
+    background-position: -5434px 0px;
+}
+
+.ci-icon-lang-Vanuatu {
+
+    background-position: -5456px 0px;
+}
+
+.ci-icon-lang-Kosovo {
+
+    background-position: -5522px 0px;
+}
+
+.ci-icon-lang-Yemen2 {
+
+    background-position: -5544px 0px;
+}
+
+.ci-icon-lang-Mayotte {
+
+    background-position: -5566px 0px;
+}
+
+.ci-icon-lang-SouthAfrica {
+
+    background-position: -5588px 0px;
+}
+
+.ci-icon-lang-Zambia {
+
+    background-position: -5610px 0px;
+}
+
+.ci-icon-lang-Zimbabwe {
+
+    background-position: -5632px 0px;
+}
+
+@media (min-width: 870px) {
+
+    .in_top, .in_top_to {
+        -webkit-box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+        box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+
+
+    }
+
+}
+#container-country-play-phone {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+.comp-BodyText {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.in_top, .in_top_to {
+    -webkit-box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+
+}
+
+#uid-provider-phone-country, #uid-provider-username-country {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 100%;
+    --tw-border-opacity: 1;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+    padding: 11px 0 9px 8px;
+    font-weight: 400;
+    color: var(--text-primary);
+    outline: none;
+    background: var(--bg-select);
+    border-radius: 0px 4px 4px 0px;
+    text-indent: 10px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+

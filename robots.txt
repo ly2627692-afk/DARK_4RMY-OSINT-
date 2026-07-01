@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /vendor
+Disallow: /review?page=2
+Disallow: /review?page=3
+Disallow: /review?page=4
+Disallow: /review?page=5
+Host: https://hacking-passwords.com
+Sitemap: https://hacking-passwords.com/sitemap.xml

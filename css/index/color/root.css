@@ -1,0 +1,386 @@
+:root body[data-theme="light"], .bodyLightTemp {
+    --bg-main:#f2f5fa;
+    --bg-main-2:#fff;
+    --bg-main-2a:#fff;
+    --bg-main-3:#2e83bc;
+    --bg-main-4:#48a2d6;
+    --bg-main-5:#dcf8c6;
+    --bg-main-6:#34b7f1;
+    --bg-accent:#2e83bc;
+    --bg-accent-2:#48a2d6;
+    --bg-accent-3:#33d766;
+    --bg-accent-4:#dcf8c6;
+    --bg-accent-5:#34b7f1;
+    --bg-accent-6:#ece5dd;
+    --header-background:#2e83bc;
+    --header-text:#e0e3e6;
+    --text-primary:#000000;
+    --text-subhead:#75787a;
+    --text-secondary:#919499;
+    --text-comonbody:#525f7f;
+    --text-tertiary:#abaeb3;
+    --text-button-day:#4d4d4d;
+    --link-color:#42afc7;
+    --link-hover:#398dc5;
+    --button-primary-bg:#2e83bc;
+    --button-primary-bg:#ffffff;
+    --button-secondary-fg:#2e83bc;
+    --button-success:#3ecf8e;
+    --button-stop:#e33d47;
+    --button-white:#fff;
+    --field-background:#f2f3f5;
+    --field-border:#d8d8d8;
+    --icon-default:#48a2d6;
+    --icon-medium:#919499;
+    --icon-secondary:#abaeb2;
+    --icon-tertiary:#c5c8cd;
+}
+
+:root body[data-theme="dark"], .bodyDarkTemp {
+    --bg-main:#20232b;
+    --bg-main-2:#252a34;
+    --bg-main-2a:#313844;
+    --bg-main-3:#313844;
+    --bg-main-4:#3b3f41;
+    --bg-main-5:#454648;
+    --bg-main-6:#34b7f1;
+    --bg-accent:#2e83bc;
+    --bg-accent-2:#48a2d6;
+    --bg-accent-3:#33d766;
+    --bg-accent-4:#dcf8c6;
+    --bg-accent-5:#34b7f1;
+    --bg-accent-6:#ece5dd;
+    --header-background:#313844;
+    --header-text:#fff;
+    --text-primary:#e1e3e6;
+    --text-subhead:#919499;
+    --text-secondary:#76787b;
+    --text-comonbody:#d9fcff;
+    --text-tertiary:#5d5f61;
+    --text-button-day:#cccccc;
+    --link-color:#42afc7;
+    --link-hover:#398dc5;
+    --button-primary-bg:#313844;
+    --button-primary-fg:#20232b;
+    --button-secondary-bg:#454647;
+    --button-secondary-fg:#e1e3e7;
+    --button-success:#3ecf8e;
+    --button-stop:#fc545c;
+    --button-white:#fff;
+    --field-background:#383e48;
+    --field-border:#343435;
+    --icon-default:#48a2d6;
+    --icon-medium:#919499;
+    --icon-secondary:#76787b;
+    --icon-tertiary:#454647;
+}
+
+
+:root body[data-theme="light"] {
+    --bg-body: #fff;
+    --bg-card: #fff;
+    --p-comonbody:#525f7f;
+    --bg-card_r: #fff;
+    --bs-ContentSection-footer: #ecf1f4;
+    --side-menu: #323232;
+    --h-color: #323232;
+    --s-color: #edeff0;
+    --bg-head: #065e55;
+    --bg-select: #fff;
+    --bg-select-hover: #fff;
+    --bg-select-color: #000;
+    --bg-select-linear-gradient: linear-gradient(#FFF, #E6E6E6);
+    --list-unstyled: #f7fafc;
+    --spiner-lk: #1d3f72;
+    --progress-value: #323232;
+    --menu-auth: #56bca6;
+    --important-amber:#fcf9e9;
+    --amber-color:#323232;
+    --user-bar-status:#909499;
+    --amber-wait:#323232;
+    --amber-wait-border:#fff;
+    --important-amber-wait:#ddeaf1;
+    --important-success:#f6fff5;
+    --new-banner:#e9fcce;
+    --important-success-color:#323232;
+    --important-neutral:#f7fafc;
+    --downloadSpeed: #35363f;
+    --globalNav-colorize:#525f7f;
+    --logo-colorize:#065e55;
+    --screen-phone:#F3F8FB;
+    --screen-phone2:#E5EBF2;
+    --check:url(https://hacking-passwords.com/images/svg/check.svg);
+    --common-UppercaseTitle:#323232;
+    --head-green:#009688;
+    --bagrng_wa:url("../../../img/default-wallpaper3.png") repeat;
+    --line-tarif:rgba(42,49,61,.16);
+    --Background-tool:linear-gradient(90deg,#00978b,#b3e895);
+    --name-color:#2a5885;
+    --preloader:#666;
+
+}
+
+:root body[data-theme="dark"]{
+
+    --bg-body: #1f232b;
+    --bg-card: #252a34;
+    --p-comonbody:#d9fcff;
+    --bg-card_r: #313844;
+    --bs-ContentSection-footer: #313844;
+    --side-menu: #fff;
+    --h-color: #fff;
+    --s-color: #6b7c93;
+    --bg-head: #313844;
+    --bg-select: #313844;
+    --bg-select-linear-gradient: linear-gradient(#252a34, #313844);
+    --bg-select-color: #fff;
+    --bg-select-hover: #323a46;
+    --list-unstyled: #313844;
+    --spiner-lk: #6b7c93;
+    --progress-value: #fff;
+    --menu-auth: #56bca6;
+    --amber-p: #323232;
+    --important-amber:#313844;
+    --amber-color:#F5BE58;
+    --user-bar-status:#909499;
+    --amber-wait:#3297d3;
+    --amber-wait-border:#3297d3;
+    --important-amber-wait:#313844;
+    --important-success:#313844;
+    --new-banner:#313844;
+    --important-success-color:#24b47e;
+    --important-neutral:#313844;
+    --downloadSpeed: #6b7c93;
+    --globalNav-colorize:#fff;
+    --logo-colorize:#fff;
+    --screen-phone:#313844;
+    --screen-phone2:#313844;
+
+    --check:url(https://hacking-passwords.com/images/svg/check_black.svg);
+    --common-UppercaseTitle:#24b47e;
+    --head-green:#313844;
+    --bagrng_wa:#313844;
+    --line-tarif:rgba(207,215,223,.2);
+    --Background-tool:linear-gradient(90deg,#1f232b,#313844);
+    --name-color:#3498db;
+    --preloader:#fff
+}
+
+.dark .dark\:divide-gray-dark > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(37, 42, 52, 1.0);
+}
+.dark .dark\:divide-gray-50 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(45, 51, 61, 1.0);
+}
+.dark .dark\:divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(48, 56, 69, 1.0);
+}
+.dark .dark\:divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(48, 56, 69, 1.0);
+}
+.dark .dark\:divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(50, 63, 75, 1.0);
+}
+.dark .dark\:divide-gray-400 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(80, 96, 109, 1.0);
+}
+.dark .dark\:divide-gray-500 > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgba(97, 110, 124, 1.0);
+}
+
+.dark .dark\:border-dark {
+
+    border-color:rgba(37, 42, 52, 1.0)
+}
+.dark .dark\:border-dark-50 {
+
+    border-color:rgba(45, 51, 61, 1.0)
+}
+.dark .dark\:border-dark-100 {
+
+    border-color:rgba(48, 56, 69, 1.0)
+}
+.dark .dark\:border-dark-200 {
+
+    border-color:rgba(48, 56, 69, 1.0)
+}
+.dark .dark\:border-dark-300 {
+
+    border-color:rgba(50, 63, 75, 1.0)
+}
+.dark .dark\:border-dark-400 {
+
+    border-color:rgba(80, 96, 109, 1.0)
+}
+.dark .dark\:border-dark-500 {
+
+    border-color:rgba(97, 110, 124, 1.0)
+}
+
+.dark .dark\:border-yellow-100 {
+    border-color: rgba(241,180,76,.25);
+}
+.dark .dark\:border-red-100 {
+    border-color: rgba(244,106,106,.45);
+}
+.dark .dark\:border-orange-100 {
+    border-color: rgba(244,106,106,.45);
+}
+.dark .dark\:border-green-100 {
+    border-color: rgba(52,195,143,.25);
+}
+.dark .dark\:border-blue-100 {
+    border-color: rgba(80,165,241,.25);
+}
+
+.dark .dark\:bg-dark {
+
+    background-color:rgba(31, 35, 44, 1.0)
+}
+.dark .dark\:bg-dark-50 {
+
+    background-color:rgba(50, 63, 75, 1.0)
+}
+.dark .dark\:bg-dark-100 {
+
+    background-color:rgba(36, 42, 53, 1.0)
+}
+.dark .dark\:bg-dark-200 {
+
+    background-color:rgba(81, 96, 109, 1.0)
+}
+.dark .dark\:bg-dark-300 {
+    background-color:rgba(81, 96, 109, 1.0)
+}
+.dark .dark\:bg-dark-400 {
+
+    background-color:rgba(48, 56, 69, 1.0)
+}
+.dark .dark\:bg-dark-500 {
+    background-color:rgba(123, 135, 148, 1.0)
+}
+
+@media (min-width: 640px) {
+    .dark  .sm\:bg-dark-100 {
+
+        background-color:rgba(36, 42, 53, 1.0)
+    }}
+
+
+
+.dark .dark\:bg-blue-500 {
+
+    background-color: rgba(59, 130, 246, 1.0);
+}
+
+
+
+.dark .dark\:hover\:bg-dark-50:hover {
+
+    background-color:rgba(45, 51, 61, 1.0)
+}
+.dark .dark\:hover\:bg-dark-100:hover {
+
+    background-color:rgba(48, 56, 69, 1.0)
+}
+.dark .dark\:hover\:bg-dark-300:hover {
+    background-color:rgba(50, 63, 75, 1.0)
+}
+.dark .dark\:hover\:bg-dark-400:hover {
+    background-color:rgba(80, 96, 109, 1.0)
+}
+.dark .dark\:hover\:bg-dark-500:hover {
+    background-color:rgba(97, 110, 124, 1.0)
+}
+
+.dark .dark\:hover\:bg-blue:hover {
+    background-color:rgba(0, 36, 66, 1.0)
+}
+.hover\:bg-secondary:hover {
+    background-color:rgba(246, 247, 247, 1.0)
+}
+
+
+.dark .dark\:text-dark-900 {
+
+    color:rgba(255, 255, 255, 1.0);
+    fill:rgba(255, 255, 255, 1.0);
+}
+.dark .dark\:hover\:text-gray-900:hover {
+
+    color:rgba(226, 226, 226, 1.0);
+}
+.dark .dark\:text-gray-700 {
+
+    color:rgba(226, 226, 226, 1.0);
+    fill:rgba(226, 226, 226, 1.0);
+}
+.dark .dark\:text-amber-700 {
+
+    color:#F5BE58;
+    fill:#F5BE58;
+}
+.dark .dark\:text-green-700 {
+
+    color:#24b47e;
+    fill:#24b47e;
+}
+.dark .dark\:text-red-700 {
+
+    color:rgba(239, 68, 68 , 1.0);
+    fill:rgba(239, 68, 68 , 1.0)
+}
+.dark .dark\:color-dark-accent {
+    color:var(--bg-accent)
+}
+.dark .dark\:color-dark-link {
+    color:var(--link-color)
+}
+.dark .dark\:text-white {
+    color:rgba(255, 255, 255, 1.0)
+}
+.dark .dark\:text-gray-500 {
+    color:rgba(156, 163, 175, 1.0)
+}
+.dark .dark\:display-none {
+    display: none;
+}
+.dark .dark:text-gray-900 {
+    color:#e2e8f0;
+    fill: #e2e8f0;
+}
+.dark .dark:text-gray-300 {
+    color:#3c4257;
+    fill: #3c4257;
+}
+.dark  .dark:text-gray-100 {
+    color:rgba(41, 41, 41, 1.0);
+    fill: rgba(41, 41, 41, 1.0)
+}
+.dark .dark:text-dark {
+    color:rgba(17,24,39, 1.0);
+    fill: rgba(17,24,39, 1.0)
+}
+.map-invert{
+    filter: var(--map-invert);
+    -ms-filter: var(--map-invert);
+    -webkit-filter: var(--map-invert);
+    -moz-filter: var(--map-invert);
+    -o-filter: var(--map-invert)}
+.text-primary{
+    color:var(--text-primary);
+    fill:var(--text-primary);
+}
+.color-link {
+    color:var(--link-color);
+    fill:var(--link-color)
+}
+.color-base {
+    color:var(--bg-accent)
+}
+.bg-accent {background-color: var(--bg-accent)}
+.bg-gray-100 {
+    background-color: var(--bg-gray-100)}
+.bg-white {
+    background-color: var(--bg-white)}
+ 
